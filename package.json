@@ -1,0 +1,31 @@
+{
+  "name": "cc.cinemaapp-server",
+  "version": "1.0.0",
+  "description": "cc.CinemaApp-server",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index"
+  },
+  "engines": {
+    "node": "11.12.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beata0809/cc.CinemaApp-server.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beata0809/cc.CinemaApp-server/issues"
+  },
+  "homepage": "https://github.com/beata0809/cc.CinemaApp-server#readme",
+  "dependencies": {
+    "config": "^3.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "helmet": "^3.16.0",
+    "mongoose": "^5.5.4",
+    "morgan": "^1.9.1"
+  }
+}

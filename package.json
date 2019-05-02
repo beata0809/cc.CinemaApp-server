@@ -5,10 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index"
-  },
-  "engines": {
-    "node": "11.12.0"
+    "start": "node index.js",
+    "back": "nodemon index.js"
   },
   "repository": {
     "type": "git",

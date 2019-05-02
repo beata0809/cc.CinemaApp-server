@@ -16,7 +16,10 @@ if (app.get('env') === 'development') {
 }
 
 const main = async () => {
-    try{
+    try {
+        await mongoose.connect(config.get('MONGO_URI'), { useNewUrlParser: true })
+            .then(() => console.info('Connected to database...'));
+        
         const port = process.env.PORT || 5000;
         app.listen(port, () => console.info(`Listening on port ${port}`));
     } catch (ex) {

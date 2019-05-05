@@ -3,8 +3,8 @@ const exampleController = require('../controllers/example');
 
 const router = express.Router();
 
-router.post('/', exampleController.router.create);
-router.get('/', exampleController.router.getAll);
-router.get('/:id', exampleController.router.getById);
+router.post('/', exampleController.routes.create);
+router.get('/', exampleController.routes.getAll);
+router.get('/:id', exampleController.routes.getById);
 
 module.exports = router;

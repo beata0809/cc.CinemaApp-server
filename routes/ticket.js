@@ -6,6 +6,7 @@ const router = express.Router();
 router.post('/', ticketController.routes.create);
 router.get('/', ticketController.routes.getAll);
 router.get('/:id', ticketController.routes.getById);
+router.get('/:title/:date', ticketController.routes.getByTitle);
 router.delete('/:id', ticketController.routes.deleteById);
 router.put('/:id', ticketController.routes.updateModel);
 router.delete('/', ticketController.routes.deleteModel);

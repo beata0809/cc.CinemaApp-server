@@ -6,7 +6,6 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const app = express();
 
-const exampleRouter = require('./routes/example');
 const ticketRouter = require('./routes/ticket');
 
 app.use(express.json());
@@ -18,7 +17,6 @@ if (app.get('env') === 'development') {
     console.info('Morgan enabled');
 }
 
-app.use('/api/example/', exampleRouter);
 app.use('/api/ticket/', ticketRouter);
 
 const main = async () => {

@@ -25,8 +25,8 @@ const ticketSchema = new Schema ({
     surname: {
         type: String
     },
-    phoneNumber: {
-        type: Number
+    email: {
+        type: String
     }
 
 });

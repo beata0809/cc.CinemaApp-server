@@ -29,6 +29,17 @@ exports.getById = async (res, Model, id) => {
   }
 };
 
+exports.getByTitle = async (res, Model, title) => {
+  try {
+    const data = title
+    const modelInstance = await Model.find(data);
+    res.status(200).send(modelInstance);
+  } catch (ex) {
+    console.log(ex);
+    res.sendStatus(500);
+  }
+};
+
 exports.deleteById = async (res, Model, id) => {
   try {
     const modelInstance = await Model.findByIdAndDelete(id);
